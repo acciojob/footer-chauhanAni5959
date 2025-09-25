@@ -1,1 +1,154 @@
-/* your code here */
+/* General Reset & Base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+/* Footer Styles */
+footer {
+  background: #101010;
+  padding: 30px 50px 15px 50px;
+}
+
+/* Top section: logo and media */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-details .logo_name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+
+.media-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.media-icon {
+  color: #fff;
+  background: #2a2a2a;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background 0.3s ease;
+}
+
+.media-icon:hover {
+  background: #e60023;
+  color: #fff;
+}
+
+/* Link Boxes */
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.link-boxes .box {
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.link-boxes h3 {
+  border-bottom: 3px solid #e60023;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.link-boxes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-boxes ul li {
+  margin-bottom: 12px;
+}
+
+.link-boxes ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.link-boxes ul li a:hover {
+  color: #e60023;
+}
+
+/* Bottom Section */
+
+.bottom-details {
+  border-top: 1px solid #222;
+  margin-top: 35px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bottom_text {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.bottom_text a {
+  color: #777;
+  text-decoration: none;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.bottom_text a:hover {
+  color: #e60023;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .media-icons {
+    margin-top: 15px;
+  }
+
+  .link-boxes {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .bottom-details {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bottom_text {
+    text-align: left;
+  }
+}
